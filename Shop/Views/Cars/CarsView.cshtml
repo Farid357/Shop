@@ -1,0 +1,13 @@
+@using Shop.Model
+@model ICars
+
+<h2>Все автомобили</h2>
+@{
+    foreach (Car car in Model.All)
+    {
+        <div>
+            <h2>Модель: @car.Name</h2>
+            <p>Цена: @car.Price.ToString("c")</p>
+        </div>
+    }
+}
