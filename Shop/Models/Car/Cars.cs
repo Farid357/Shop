@@ -11,8 +11,8 @@ public class Cars : ICars
             
         _all = new List<Car>
         {
-            new Car(0, "Tesla", string.Empty, string.Empty, string.Empty, category, 45000),
-            new Car(0, "Mercedes", string.Empty, string.Empty, string.Empty, category, 30000),
+            new Car(0, "Tesla", string.Empty, string.Empty, "https://github.com/Farid357/Shop/blob/main/Shop/wwwroot/Images/Tesla.png", category, 45000),
+            new Car(0, "Mercedes", string.Empty, string.Empty, "https://github.com/Farid357/Shop/blob/main/Shop/wwwroot/Images/Mercedes.png", category, 30000),
         };
     }
 

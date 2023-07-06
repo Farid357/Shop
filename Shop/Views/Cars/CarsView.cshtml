@@ -1,13 +1,20 @@
 @using Shop.Model
 @model ICars
 
-<h2>Все автомобили</h2>
-@{
-    foreach (Car car in Model.All)
-    {
-        <div>
-            <h2>Модель: @car.Name</h2>
-            <p>Цена: @car.Price.ToString("c")</p>
-        </div>
+<h1>Все автомобили</h1>
+<div class="row mtp5 mb-2">
+
+    @{
+        foreach (Car car in Model.All)
+        {
+            <div class="col-lg-4">
+                <h2>@car.Name</h2>
+                <img class="img-thumbnail" src="@car.Icon" alt=""/>
+                <p>@car.ShortDescription</p>
+                <p>Цена: @car.Price.ToString("c")</p>
+                <p><a class="btn btn-warning" href="#">Подробнее</a>
+                </p>
+            </div>
+        }
     }
-}
+</div>
